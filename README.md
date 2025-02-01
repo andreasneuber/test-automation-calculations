@@ -1,5 +1,10 @@
 # Test Automation Calculations
 
+## How many hours can be saved by automating all tests of Test Suite?
+
+Hours Saved = Manual Test Execution Time − (Automated Test Execution Time + Automation Development Time)
+
+
 ## Can a team "afford" maintenance of [n] more automated tests?
 
 - Monthly available hours for maintenance and implementation tasks: TH

@@ -8,6 +8,32 @@ from utils.date_utils import generate_next_6_months
 # Title of the app
 st.title('Test Automation Calculations')
 
+st.subheader('How many work hours can be saved by automating all tests of Test Suite?')
+
+# Input fields
+manual_test_execution_time = st.number_input('Manual Test Execution Time of Test Suite (in hours):', min_value=0)
+automated_test_execution_time = st.number_input('Automated Test Execution Time of Test Suite (in minutes):', min_value=0)
+automation_development_time = st.number_input('Automation Development Time (in hours):', min_value=0)
+number_execution_automation = st.number_input('Additional runs of Automated Tests after implementation:', min_value=1)
+
+# Calculate the hours saved
+hours_saved_first_run = manual_test_execution_time - ((automated_test_execution_time / 60) + automation_development_time)
+hours_saved_next_runs = (manual_test_execution_time - (automated_test_execution_time / 60)) * number_execution_automation
+
+# Display the result
+if hours_saved_first_run > 0:
+    st.success(f'In implementation stage and with the 1st Run, you can save approximately {hours_saved_first_run:.2f} hours with test automation.')
+else:
+    st.warning(f'In implementation stage and with the 1st Run, you will loose approximately {hours_saved_first_run:.2f} hours.')
+
+if hours_saved_next_runs > 0 and number_execution_automation > 0:
+    st.success(f'However, with {number_execution_automation} additional runs of the automation suite, you can save approximately {hours_saved_next_runs:.2f} hours.')
+
+st.markdown("---")
+
+
+
+#################################################################################################
 st.subheader('Can the team "afford" the maintenance of [n] more automated tests?')
 
 # Input fields

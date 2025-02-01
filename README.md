@@ -11,4 +11,9 @@
 ### Formula
 `P = TH – (MT + ((MT / N) x A))`
 
-If P is 0 or negative => Adding more tests will lead to decay of automation test suite.
+If P is 0 or negative 
+=> Adding more tests will lead to the decay of the automation test suite. Maintenance cannot be kept up.
+
+***
+
+[Docu Streamlit App](docs/Streamlit-App.md)

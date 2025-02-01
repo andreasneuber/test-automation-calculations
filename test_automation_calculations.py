@@ -9,7 +9,7 @@ from utils.date_utils import generate_next_6_months
 # Title of the app
 st.title('Test Automation Calculations')
 
-st.subheader('How many work hours can be saved by automating all tests of Test Suite?')
+st.subheader('How many work hours can be saved by automating all tests of a Test Suite?')
 
 # Input fields
 manual_test_execution_time = st.number_input('Manual Test Execution Time of Test Suite (in hours):', min_value=0)

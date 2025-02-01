@@ -21,18 +21,20 @@ hours_saved_first_run = manual_test_execution_time - ((automated_test_execution_
 time_savings_per_run = manual_test_execution_time - (automated_test_execution_time / 60)
 
 # Display the result
-if hours_saved_first_run > 0:
-    st.success(f'In implementation stage and with the very 1st run, you can save approximately {hours_saved_first_run:.2f} hours with test automation.')
-    st.success(f'Each additional run will save you about {time_savings_per_run:.2f} hours.')
-else:
-    st.warning(f'In implementation stage and with the very 1st run, you will loose approximately {hours_saved_first_run:.2f} hours.')
+if manual_test_execution_time > 0 and automated_test_execution_time > 0:
+    if hours_saved_first_run > 0:
+        st.success(f'In the implementation stage and with the very 1st run, you can save approximately {hours_saved_first_run:.2f} hours with test automation.')
+        st.success(f'Each additional run will save you about {time_savings_per_run:.2f} hours.')
+    else:
+        # st.warning(f'In the implementation stage you will actually not win but loose approximately {hours_saved_first_run:.2f} hours.')
+        st.warning(f'In the implementation stage, you will actually lose approximately {hours_saved_first_run:.2f} hours, rather than gain any time.')
 
-    if time_savings_per_run > 0:
-        positive_number = abs(hours_saved_first_run)
-        amortization = math.ceil(positive_number / time_savings_per_run)
+        if time_savings_per_run > 0:
+            positive_number = abs(hours_saved_first_run)
+            amortization = math.ceil(positive_number / time_savings_per_run)
 
-        st.success(f'However, each additional run will save you about {time_savings_per_run:.2f} hours.')
-        st.success(f'Means, the initial time deficit is balanced out with {amortization} additional runs of the automation suite.')
+            st.success(f'However, each additional run will save you approximately {time_savings_per_run:.2f} hours of manual work later on.')
+            st.success(f'This means the initial time deficit is balanced out with {amortization} additional runs of the automation suite.')
 
 st.markdown("---")
 

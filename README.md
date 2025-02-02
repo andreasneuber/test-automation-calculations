@@ -1,9 +1,14 @@
 # Test Automation Calculations
 
-## How many hours can be saved by automating all tests of Test Suite?
+## How many work hours can be saved by automating the test suite??
 
-Hours Saved = Manual Test Execution Time − (Automated Test Execution Time + Automation Development Time)
+### Formula
+`Hours Saved = Manual Test Run Time − Automated Test Run Time`
 
+## How many test runs are needed to counter-balance the initial investment for automating a test suite?
+
+### Formula
+`Test Run Number for Break even = Implementation Time / Time savings by automation`
 
 ## Can a team "afford" maintenance of [n] more automated tests?
 

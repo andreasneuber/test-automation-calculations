@@ -9,36 +9,33 @@ from utils.date_utils import generate_next_6_months
 # Title of the app
 st.title('Test Automation Calculations')
 
-st.subheader('How many work hours can be saved by automating all tests of a Test Suite?')
+st.subheader('How many work hours can be saved by automating the test suite?')
 
 # Input fields
-manual_test_execution_time = st.number_input('Manual Test Execution Time of Test Suite (in hours):', min_value=0)
-automated_test_execution_time = st.number_input('Automated Test Execution Time of Test Suite (in minutes):', min_value=0)
-automation_development_time = st.number_input('Automation Development Time (in hours):', min_value=0)
+manual_test_execution_time = st.number_input('Manual Test Run Time of Test Suite (in hours):', min_value=0)
+automated_test_execution_time = st.number_input('Automated Test Run Time of Test Suite (in minutes):', min_value=0)
 
 # Calculate the hours saved
-hours_saved_first_run = manual_test_execution_time - ((automated_test_execution_time / 60) + automation_development_time)
 time_savings_per_run = manual_test_execution_time - (automated_test_execution_time / 60)
 
 # Display the result
 if manual_test_execution_time > 0 and automated_test_execution_time > 0:
-    if hours_saved_first_run > 0:
-        st.success(f'In the implementation stage and with the very 1st run, you can save approximately {hours_saved_first_run:.2f} hours with test automation.')
-        st.success(f'Each additional run will save you about {time_savings_per_run:.2f} hours.')
-    else:
-        # st.warning(f'In the implementation stage you will actually not win but loose approximately {hours_saved_first_run:.2f} hours.')
-        st.warning(f'In the implementation stage, you will actually lose approximately {hours_saved_first_run:.2f} hours, rather than gain any time.')
-
-        if time_savings_per_run > 0:
-            positive_number = abs(hours_saved_first_run)
-            amortization = math.ceil(positive_number / time_savings_per_run)
-
-            st.success(f'However, each additional run will save you approximately {time_savings_per_run:.2f} hours of manual work later on.')
-            st.success(f'This means the initial time deficit is balanced out with {amortization} additional runs of the automation suite.')
+    st.success(f'Each automated test run will save you about {time_savings_per_run:.2f} hours.')
 
 st.markdown("---")
 
+#################################################################################################
+st.subheader('How many test runs are needed to counter-balance the initial investment for automating a test suite?')
 
+implementation_time = st.number_input('Implementation time for automated tests (in hours):', min_value=0)
+time_savings = st.number_input('Time savings per run of automated tests (in hours):', min_value=0)
+
+
+if implementation_time > 0 and time_savings > 0:
+    breakeven_test_runs = implementation_time / time_savings
+    st.success(f'The initial time investment of {implementation_time} hours is balanced out after {breakeven_test_runs} test runs of the automation suite.')
+
+st.markdown("---")
 
 #################################################################################################
 st.subheader('Can the team "afford" the maintenance of [n] more automated tests?')

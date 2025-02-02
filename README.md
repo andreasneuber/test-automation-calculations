@@ -1,13 +1,13 @@
 # Test Automation Calculations
 
-## How many work hours can be saved by automating the test suite??
+## How many work hours can be saved by automating the test suite?
 
-### Formula
+#### Formula
 `Hours Saved = Manual Test Run Time − Automated Test Run Time`
 
 ## How many test runs are needed to counter-balance the initial investment for automating a test suite?
 
-### Formula
+#### Formula
 `Test Run Number for Break even = Implementation Time / Time savings by automation`
 
 ## Can a team "afford" maintenance of [n] more automated tests?
@@ -18,7 +18,7 @@
 - Count of new automated tests to be added: A 
 - Potential to add more tests: P
 
-### Formula
+#### Formula
 `P = TH – (MT + ((MT / N) x A))`
 
 If P is 0 or negative 
@@ -26,4 +26,4 @@ If P is 0 or negative
 
 ***
 
-[Docu Streamlit App](docs/Streamlit-App.md)
+[Docu: How to setup and run the Streamlit App](docs/Streamlit-App.md)

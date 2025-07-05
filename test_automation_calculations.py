@@ -11,10 +11,10 @@ from questions import question3
 st.title('Test Automation Calculations')
 
 page_dict = {
-    "Home": "home",
-    "How many work hours can be saved by automating the test suite?": "question1",
-    "How many test runs are needed to counter-balance the initial investment for automating a test suite?": "question2",
-    "Can the team 'afford' the maintenance of [n] more automated tests?": "question3",
+    "HOME": "home",
+    "1\\) How many work hours can be saved by automating the test suite?": "question1",
+    "2\\) How many test runs are needed to counter-balance the initial investment for automating a test suite?": "question2",
+    "3\\) Can the team 'afford' the maintenance of [n] more automated tests?": "question3",
 }
 
 st.sidebar.title("Navigation")

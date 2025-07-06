@@ -1,6 +1,8 @@
 # page1.py
 import streamlit as st
 import plotly.express as px
+import pandas as pd
+
 
 def show():
     st.subheader('How many work hours can be saved by automating the test suite?')
@@ -19,19 +21,21 @@ def show():
         st.success(f'Each automated test run will save you about {time_savings_per_run:.2f} hours.')
 
         # Data for the bar chart
-        data = {
+        df = pd.DataFrame({
             'Type': ['Manual', 'Automated', 'Time Saved'],
             'Time (hours)': [manual_test_execution_time, automated_test_execution_time, time_savings_per_run]
-        }
+        })
 
         # Create the bar chart with different colors for each bar
-        fig = px.bar(data, x='Type', y='Time (hours)', title='Time Comparison: Manual vs Automated Test Suite',
+        fig = px.bar(df, x='Type', y='Time (hours)', title='Time Comparison: Manual vs Automated Test Suite',
                      labels={'Time (hours)': 'Time (hours)'},
-                     color='Type', color_discrete_map={
-                'Manual': 'blue',
-                'Automated': 'green',
-                'Time Saved': 'orange'
-            })
+                     color='Type',
+                     color_discrete_map={
+                         'Manual': 'blue',
+                         'Automated': 'green',
+                         'Time Saved': 'orange'
+                     },
+                     hover_data={'Time (hours)': ':.2f'})
 
         # Display the bar chart in Streamlit
         st.plotly_chart(fig)

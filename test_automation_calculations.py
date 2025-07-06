@@ -1,8 +1,6 @@
 import streamlit as st
-from questions import home
-from questions import question1
-from questions import question2
-from questions import question3
+from questions import home, question1, question2, question3
+
 
 # Set the layout to wide
 # st.set_page_config(layout="wide")

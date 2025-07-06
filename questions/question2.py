@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import numpy as np
 
 def show():
-    st.subheader('How many test runs are needed to counter-balance the initial investment for automating a test suite?')
+    st.subheader('How many test runs are needed to counter-balance the initial time investment for automating a test suite?')
 
     # Input variables
     initial_investment = st.number_input('Initial investment for automation (in hours)', min_value=0)

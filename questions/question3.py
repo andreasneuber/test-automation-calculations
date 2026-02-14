@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from utils.date_utils import generate_next_6_months
 
 def show():
-    st.subheader('Can the team "afford" the maintenance of [n] more automated tests?')
+    st.subheader('Maintenance: Can the team "afford" [n] more automated tests?')
 
     # Input fields
     TH = st.number_input('Monthly hours available for maintenance tasks (TH):', min_value=0)

@@ -2,15 +2,16 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from utils.date_utils import generate_next_6_months
+from utils.translations import get_text
 
-def show():
-    st.subheader('Maintenance: Can the team "afford" [n] more automated tests?')
+def show(language='en'):
+    st.subheader(get_text(language, 'question3', 'title'))
 
     # Input fields
-    TH = st.number_input('Monthly hours available for maintenance tasks (TH):', min_value=0)
-    MT = st.number_input('Monthly hours currently used to maintain existing automated tests (MT):', min_value=0)
-    N = st.number_input('Total count of all current automated tests (N):', min_value=0)
-    A = st.number_input('Count of new automated tests to be added next month (A):', min_value=0)
+    TH = st.number_input(get_text(language, 'question3', 'input_th'), min_value=0)
+    MT = st.number_input(get_text(language, 'question3', 'input_mt'), min_value=0)
+    N = st.number_input(get_text(language, 'question3', 'input_n'), min_value=0)
+    A = st.number_input(get_text(language, 'question3', 'input_a'), min_value=0)
 
     # Calculate the potential to add more tests (P)
     potential_tests_array = []
@@ -31,24 +32,23 @@ def show():
         st.text("")
 
         if isinstance(potential_tests_array[0], (int, float)) and potential_tests_array[0] <= 0:
-            st.warning('Adding more tests will lead to decay of the automation test suite.')
+            st.warning(get_text(language, 'question3', 'warning_message'))
         elif isinstance(potential_tests_array[0], (int, float)) and potential_tests_array[0] > 0:
-            st.success(f'You can afford to add and maintain {A} more automated tests next month.')
+            st.success(get_text(language, 'question3', 'success_message').format(count=int(A)))
 
         # Plot the trend
         fig, ax = plt.subplots()
-        months = generate_next_6_months()
+        months = generate_next_6_months(language)
         ax.plot(months, potential_tests_array, marker='o')
         ax.axhline(0, color='red', linestyle='--', linewidth=0.5)
-        ax.set_xlabel('Months')
-        ax.set_ylabel('Potential to add more tests (P)')
+        ax.set_xlabel(get_text(language, 'question3', 'chart_xaxis'))
+        ax.set_ylabel(get_text(language, 'question3', 'chart_yaxis'))
         ax.grid(True)
 
         # Display the chart
         st.text("")
         st.text("")
         st.text("")
-        st.markdown(f"##### 6-Month Prediction of Potential (P) for Adding {A} More Tests Each Month")
         st.pyplot(fig)
 
     else:

@@ -1,6 +1,6 @@
 # home.py
 import streamlit as st
+from utils.translations import get_text
 
-def show():
-    st.write("Intended usage: Follow the questions under Navigation one by one " \
-    "to avoid financial losses and frustrations.")
+def show(language='en'):
+    st.write(get_text(language, 'home', 'instructions'))

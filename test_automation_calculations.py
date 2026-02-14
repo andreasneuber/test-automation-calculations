@@ -1,6 +1,7 @@
 import streamlit as st
 from questions import home, question1, question2, question3
 from utils.translations import get_text
+from utils.persistence import clear_all_data
 
 
 # Set the layout to wide
@@ -35,6 +36,12 @@ page_dict = {
 
 st.sidebar.title(get_text(lang, 'main', 'sidebar_title'))
 selected_label = st.sidebar.radio(get_text(lang, 'main', 'nav_label'), list(page_dict.keys()))
+
+# Clear All button
+if st.sidebar.button(get_text(lang, 'main', 'clear_all_button')):
+    # Clear all saved data from file
+    clear_all_data()
+    st.rerun()
 
 if page_dict[selected_label] == "home":
     home.show(lang)

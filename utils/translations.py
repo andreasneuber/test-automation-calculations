@@ -13,7 +13,8 @@ TRANSLATIONS = {
             'nav_q1': '1) How many work hours can be saved by automating the test suite?',
             'nav_q2': '2) How many test runs are needed to counter-balance the initial time investment for automating a test suite?',
             'nav_q3': '3) Can the team \'afford\' the maintenance of [n] more automated tests?',
-            'language_label': 'Language'
+            'language_label': 'Language',
+            'clear_all_button': 'Clear All Inputs'
         },
         'home': {
             'instructions': 'Intended usage: Follow the questions under Navigation one by one to avoid financial losses and frustrations.'
@@ -65,7 +66,8 @@ TRANSLATIONS = {
             'nav_q1': '1) Wie viele Arbeitsstunden können durch die Automatisierung der Testsuite eingespart werden?',
             'nav_q2': '2) Wie viele Testläufe sind erforderlich, um die anfängliche Zeitinvestition für die Automatisierung einer Testsuite auszugleichen?',
             'nav_q3': '3) Kann sich das Team die Wartung von [n] weiteren automatisierten Tests „leisten"?',
-            'language_label': 'Sprache'
+            'language_label': 'Sprache',
+            'clear_all_button': 'Alle Eingaben löschen'
         },
         'home': {
             'instructions': 'Verwendungszweck: Folgen Sie den Fragen unter Navigation nacheinander, um finanzielle Verluste und Frustrationen zu vermeiden.'
@@ -117,7 +119,8 @@ TRANSLATIONS = {
             'nav_q1': '1) Combien d\'heures de travail peuvent être économisées en automatisant la suite de tests ?',
             'nav_q2': '2) Combien de cycles de tests sont nécessaires pour compenser l\'investissement initial en temps pour l\'automatisation d\'une suite de tests ?',
             'nav_q3': '3) L\'équipe peut-elle « se permettre » la maintenance de [n] tests automatisés supplémentaires ?',
-            'language_label': 'Langue'
+            'language_label': 'Langue',
+            'clear_all_button': 'Effacer toutes les entrées'
         },
         'home': {
             'instructions': 'Usage prévu : Suivez les questions sous Navigation une par une pour éviter les pertes financières et les frustrations.'
@@ -169,7 +172,8 @@ TRANSLATIONS = {
             'nav_q1': '1) Wéivill Aarbechtsstonnen kënne gespuert ginn duerch d\'Automatiséierung vun der Testsuite?',
             'nav_q2': '2) Wéivill Testleefer si néideg fir déi initial Zäitinvestitioun fir d\'Automatiséierung vun enger Testsuite auszegläichen?',
             'nav_q3': '3) Kann d\'Team sech d\'Maintenance vun [n] méi automatiséierte Tester "leeschten"?',
-            'language_label': 'Sprooch'
+            'language_label': 'Sprooch',
+            'clear_all_button': 'All Agaben läschen'
         },
         'home': {
             'instructions': 'Virgesinnten Gebrauch:Follt d\'Froen ënner Navigatioun eent no deem aneren fir finanziell Verloschter a Frustratiounen ze vermeiden.'

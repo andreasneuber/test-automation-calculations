@@ -3,19 +3,28 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from utils.translations import get_text, format_number
+from utils.persistence import get_value, update_value
 
 
 def show(language='en'):
     st.subheader(get_text(language, 'question1', 'title'))
 
-    # Input fields
+    # Input fields with file persistence
     manual_test_execution_time = st.number_input(
         get_text(language, 'question1', 'input_manual'), 
-        min_value=0
+        min_value=0,
+        value=get_value('q1_manual_test_execution_time', 0),
+        step=1,
+        on_change=lambda: update_value('q1_manual_test_execution_time', st.session_state.q1_manual_input),
+        key='q1_manual_input'
     )
     automated_test_execution_time_min = st.number_input(
         get_text(language, 'question1', 'input_automated'),
-        min_value=0
+        min_value=0,
+        value=get_value('q1_automated_test_execution_time_min', 0),
+        step=1,
+        on_change=lambda: update_value('q1_automated_test_execution_time_min', st.session_state.q1_auto_input),
+        key='q1_auto_input'
     )
 
     # Calculate the hours saved

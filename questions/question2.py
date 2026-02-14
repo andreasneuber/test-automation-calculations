@@ -4,18 +4,27 @@ import streamlit as st
 import plotly.graph_objs as go
 import numpy as np
 from utils.translations import get_text
+from utils.persistence import get_value, update_value
 
 def show(language='en'):
     st.subheader(get_text(language, 'question2', 'title'))
 
-    # Input variables
+    # Input variables with file persistence
     initial_investment = st.number_input(
         get_text(language, 'question2', 'input_investment'), 
-        min_value=0
+        min_value=0,
+        value=get_value('q2_initial_investment', 0),
+        step=1,
+        on_change=lambda: update_value('q2_initial_investment', st.session_state.q2_invest_input),
+        key='q2_invest_input'
     )
     time_savings_per_run = st.number_input(
         get_text(language, 'question2', 'input_savings'), 
-        min_value=0
+        min_value=0,
+        value=get_value('q2_time_savings_per_run', 0),
+        step=1,
+        on_change=lambda: update_value('q2_time_savings_per_run', st.session_state.q2_savings_input),
+        key='q2_savings_input'
     )
 
     # Calculate the number of runs to break even

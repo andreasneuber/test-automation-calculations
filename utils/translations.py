@@ -17,7 +17,7 @@ TRANSLATIONS = {
             'clear_all_button': 'Clear All Inputs'
         },
         'home': {
-            'instructions': 'Intended usage: Follow the questions under Navigation one by one to avoid financial losses and frustrations.'
+            'instructions': '**For Managers & Decision-Makers**\n\nThis tool helps you decide whether test automation is a worthwhile investment for your team. While many more aspects of automation could be calculated, the three questions in the navigation are the most important ones to answer before committing resources.\n\nWork through each question sequentially to make an informed decision and avoid financial losses or frustration from premature automation.'
         },
         'question1': {
             'title': 'How many work hours can be saved by automating the test suite?',
@@ -70,7 +70,7 @@ TRANSLATIONS = {
             'clear_all_button': 'Alle Eingaben löschen'
         },
         'home': {
-            'instructions': 'Verwendungszweck: Folgen Sie den Fragen unter Navigation nacheinander, um finanzielle Verluste und Frustrationen zu vermeiden.'
+            'instructions': '**Für Manager & Entscheidungsträger**\n\nDieses Tool hilft Ihnen bei der Entscheidung, ob Testautomatisierung eine lohnende Investition für Ihr Team ist. Obwohl viele weitere Aspekte der Automatisierung berechnet werden könnten, sind die drei Fragen in der Navigation die wichtigsten, die beantwortet werden sollten, bevor Ressourcen eingesetzt werden.\n\nGehen Sie jede Frage nacheinander durch, um eine fundierte Entscheidung zu treffen und finanzielle Verluste oder Frustrationen durch verfrühte Automatisierung zu vermeiden.'
         },
         'question1': {
             'title': 'Wie viele Arbeitsstunden können durch die Automatisierung der Testsuite eingespart werden?',
@@ -123,7 +123,7 @@ TRANSLATIONS = {
             'clear_all_button': 'Effacer toutes les entrées'
         },
         'home': {
-            'instructions': 'Usage prévu : Suivez les questions sous Navigation une par une pour éviter les pertes financières et les frustrations.'
+            'instructions': '**Pour les managers et décideurs**\n\nCet outil vous aide à décider si l\'automatisation des tests est un investissement rentable pour votre équipe. Bien que de nombreux autres aspects de l\'automatisation puissent être calculés, les trois questions de la navigation sont les plus importantes à répondre avant d\'engager des ressources.\n\nTraitez chaque question séquentiellement pour prendre une décision éclairée et éviter les pertes financières ou la frustration liée à une automatisation prématurée.'
         },
         'question1': {
             'title': 'Combien d\'heures de travail peuvent être économisées en automatisant la suite de tests ?',
@@ -176,7 +176,7 @@ TRANSLATIONS = {
             'clear_all_button': 'All Agaben läschen'
         },
         'home': {
-            'instructions': 'Virgesinnten Gebrauch:Follt d\'Froen ënner Navigatioun eent no deem aneren fir finanziell Verloschter a Frustratiounen ze vermeiden.'
+            'instructions': '**Fir Manager & Entscheedungsträger**\n\nDësen Tool hëlleft Iech bei der Entscheedung, ob Testautomatiséierung eng lountbar Investitioun fir Äert Team ass. Och wann vill méi Aspekter vun der Automatiséierung kéinte berechent ginn, sinn déi dräi Froen an der Navigatioun déi wichtegst, déi sollen beäntwert ginn ier Ressourcen agesat ginn.\n\nGitt duerch all Fro eent no der anerer fir eng informéiert Entscheedung ze treffen an finanziell Verloschter oder Frustratioun duerch verfréilegt Automatiséierung ze vermeiden.'
         },
         'question1': {
             'title': 'Wéivill Aarbechtsstonnen kënne gespuert ginn duerch d\'Automatiséierung vun der Testsuite?',

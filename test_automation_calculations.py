@@ -37,6 +37,10 @@ page_dict = {
 st.sidebar.title(get_text(lang, 'main', 'sidebar_title'))
 selected_label = st.sidebar.radio(get_text(lang, 'main', 'nav_label'), list(page_dict.keys()))
 
+# Add spacing before Clear All button
+st.sidebar.write("")
+st.sidebar.write("")
+
 # Clear All button
 if st.sidebar.button(get_text(lang, 'main', 'clear_all_button')):
     # Clear all saved data from file

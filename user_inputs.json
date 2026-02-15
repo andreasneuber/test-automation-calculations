@@ -2,5 +2,9 @@
   "q2_initial_investment": 160,
   "q2_time_savings_per_run": 8,
   "q1_manual_test_execution_time": 10,
-  "q1_automated_test_execution_time_min": 10
+  "q1_automated_test_execution_time_min": 10,
+  "q3_th": 10,
+  "q3_mt": 5,
+  "q3_n": 50,
+  "q3_a": 10
 }

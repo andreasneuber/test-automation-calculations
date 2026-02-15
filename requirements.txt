@@ -3,3 +3,6 @@ matplotlib
 scikit-learn
 numpy
 plotly
+reportlab
+kaleido
+Pillow

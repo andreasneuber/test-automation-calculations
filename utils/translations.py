@@ -55,7 +55,22 @@ TRANSLATIONS = {
             'chart_xaxis': 'Months',
             'chart_yaxis': 'Potential to add more tests (P)'
         },
-        'months': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        'months': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        'pdf': {
+            'title': 'Test Automation Investment Analysis',
+            'generated_date': 'Report Generated:',
+            'executive_summary': 'Executive Summary',
+            'summary_intro': 'This report provides a comprehensive analysis of the test automation investment for decision-making purposes. The following three key questions have been evaluated to determine the financial viability and sustainability of test automation.',
+            'q1_summary_label': 'Time Savings per Run',
+            'q2_summary_label': 'Break-Even Analysis',
+            'q3_summary_label': 'Maintenance Capacity',
+            'inputs_label': 'Inputs',
+            'results_label': 'Results',
+            'footer_note': 'This analysis is based on the provided inputs and assumptions. Actual results may vary based on team dynamics, technical debt, and other factors.',
+            'download_button': 'Download PDF Report',
+            'download_full_report': 'Download Full Executive Report',
+            'no_data_warning': 'Please complete at least one question to generate a report.'
+        }
     },
     'de': {
         'main': {
@@ -108,7 +123,22 @@ TRANSLATIONS = {
             'chart_xaxis': 'Monate',
             'chart_yaxis': 'Potenzial für weitere Tests (P)'
         },
-        'months': ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
+        'months': ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+        'pdf': {
+            'title': 'Testautomatisierungs-Investitionsanalyse',
+            'generated_date': 'Bericht erstellt:',
+            'executive_summary': 'Zusammenfassung',
+            'summary_intro': 'Dieser Bericht bietet eine umfassende Analyse der Testautomatisierungsinvestition für Entscheidungszwecke. Die folgenden drei Schlüsselfragen wurden bewertet, um die finanzielle Machbarkeit und Nachhaltigkeit der Testautomatisierung zu bestimmen.',
+            'q1_summary_label': 'Zeitersparnis pro Durchlauf',
+            'q2_summary_label': 'Break-Even-Analyse',
+            'q3_summary_label': 'Wartungskapazität',
+            'inputs_label': 'Eingaben',
+            'results_label': 'Ergebnisse',
+            'footer_note': 'Diese Analyse basiert auf den bereitgestellten Eingaben und Annahmen. Tatsächliche Ergebnisse können aufgrund von Teamdynamik, technischen Schulden und anderen Faktoren variieren.',
+            'download_button': 'PDF-Bericht herunterladen',
+            'download_full_report': 'Vollständigen Executive Report herunterladen',
+            'no_data_warning': 'Bitte beantworten Sie mindestens eine Frage, um einen Bericht zu erstellen.'
+        }
     },
     'fr': {
         'main': {
@@ -161,7 +191,22 @@ TRANSLATIONS = {
             'chart_xaxis': 'Mois',
             'chart_yaxis': 'Potentiel pour ajouter plus de tests (P)'
         },
-        'months': ['jan.', 'fév.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
+        'months': ['jan.', 'fév.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'],
+        'pdf': {
+            'title': 'Analyse d\'investissement en automatisation de tests',
+            'generated_date': 'Rapport généré :',
+            'executive_summary': 'Résumé exécutif',
+            'summary_intro': 'Ce rapport fournit une analyse complète de l\'investissement en automatisation de tests à des fins de prise de décision. Les trois questions clés suivantes ont été évaluées pour déterminer la viabilité financière et la durabilité de l\'automatisation des tests.',
+            'q1_summary_label': 'Économie de temps par exécution',
+            'q2_summary_label': 'Analyse du seuil de rentabilité',
+            'q3_summary_label': 'Capacité de maintenance',
+            'inputs_label': 'Entrées',
+            'results_label': 'Résultats',
+            'footer_note': 'Cette analyse est basée sur les données et hypothèses fournies. Les résultats réels peuvent varier en fonction de la dynamique d\'équipe, de la dette technique et d\'autres facteurs.',
+            'download_button': 'Télécharger le rapport PDF',
+            'download_full_report': 'Télécharger le rapport exécutif complet',
+            'no_data_warning': 'Veuillez compléter au moins une question pour générer un rapport.'
+        }
     },
     'lb': {
         'main': {
@@ -214,7 +259,22 @@ TRANSLATIONS = {
             'chart_xaxis': 'Méint',
             'chart_yaxis': 'Potenzial fir méi Tester (P)'
         },
-        'months': ['Jan.', 'Feb.', 'Mäe.', 'Abr.', 'Mee', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.']
+        'months': ['Jan.', 'Feb.', 'Mäe.', 'Abr.', 'Mee', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.'],
+        'pdf': {
+            'title': 'Testautomatiséierungs-Investitiounsanalyse',
+            'generated_date': 'Bericht erstellt:',
+            'executive_summary': 'Executive Zesummefaassung',
+            'summary_intro': 'Dëse Bericht bitt eng ëmfaassend Analyse vun der Testautomatiséierungs-Investitioun fir Entscheedungszwecker. Déi folgend dräi Schlësselfroe goufe evaluéiert fir déi finanziell Machbarkeet an Nohaltegkeet vun der Testautomatiséierung ze bestëmmen.',
+            'q1_summary_label': 'Zäiterspuernis pro Duerchlaaf',
+            'q2_summary_label': 'Break-Even-Analyse',
+            'q3_summary_label': 'Maintenance-Kapazitéit',
+            'inputs_label': 'Agaben',
+            'results_label': 'Resultater',
+            'footer_note': 'Dës Analyse baséiert op de bereetgestellten Agaben an Unhamen. Tatsächlech Resultater kënnen op Basis vun Teamdynamik, techneschen Scholden an anere Faktoren variéieren.',
+            'download_button': 'PDF-Bericht eroflueden',
+            'download_full_report': 'Vollstännegen Executive Report eroflueden',
+            'no_data_warning': 'Wgl. beäntwert mindestens eng Fro fir e Bericht ze erstellen.'
+        }
     }
 }
 
